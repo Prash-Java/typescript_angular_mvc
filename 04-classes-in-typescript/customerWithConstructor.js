@@ -1,3 +1,5 @@
+"use strict";
+// public, private, protected access modifiers
 var CustomerWithConstructor = /** @class */ (function () {
     function CustomerWithConstructor(firstName, lastName) {
         this.firstName = firstName;

@@ -1,3 +1,11 @@
+"use strict";
+/*
+    Even if .ts file has error, and compilation error comes, still it creates .js file,
+    So if we need to debug and fix the .ts file, it is always good idea to remove its corressponding .js file, if it exists,
+    command 1-> remove .js file: rm CustomerWithConstructorAndAccessors.js
+    command 2-> after debug & fixes, compile the .ts file: tsc --target ES5 --noEmitOnError CustomerWithConstructorAndAccessors.ts
+    command 3-> execute the .js file generated in step 2 above: node CustomerWithConstructorAndAccessors.js
+*/
 var CustomerWithConstructorAndAccessors = /** @class */ (function () {
     function CustomerWithConstructorAndAccessors(_theFirstName, _theLastName) {
         this._firstName = _theFirstName;
