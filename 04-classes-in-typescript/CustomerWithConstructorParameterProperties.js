@@ -30,7 +30,5 @@ var CustomerWithConstructorParameterProperties = /** @class */ (function () {
     return CustomerWithConstructorParameterProperties;
 }());
 var myCustomer = new CustomerWithConstructorParameterProperties("Java", "Kotlin");
-myCustomer.firstName = "Golang";
-myCustomer.lastName = "Python";
 console.log(myCustomer.firstName);
 console.log(myCustomer.lastName);

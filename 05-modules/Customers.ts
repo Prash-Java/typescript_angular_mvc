@@ -1,7 +1,4 @@
-/*
-    tsc --build --clean
-*/
-class CustomerWithConstructorParameterProperties {
+export class Customers {
     constructor(private _firstName:string, private _lastName:string){
 
     }
@@ -22,7 +19,3 @@ class CustomerWithConstructorParameterProperties {
         this._lastName = value;
     }
 }
-let myCustomer = new CustomerWithConstructorParameterProperties("Java","Kotlin");
-
-console.log(myCustomer.firstName);
-console.log(myCustomer.lastName);
