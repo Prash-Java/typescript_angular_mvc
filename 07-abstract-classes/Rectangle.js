@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Rectangle = void 0;
-// Child Class
 const Shape_1 = require("./Shape");
 class Rectangle extends Shape_1.Shape {
     _theX;
@@ -15,21 +14,23 @@ class Rectangle extends Shape_1.Shape {
         this._width = _width;
         this._height = _height;
     }
-    //Accessors
-    set setWidth(w) {
-        this._width = w;
-    }
     get getWidth() {
         return this._width;
     }
-    set setHeight(h) {
-        this._height = h;
+    set setWidth(value) {
+        this._width = value;
     }
     get getHeight() {
         return this._height;
     }
-    getRectangleInfo() {
-        return super.getShapeInfo() + `, width=${this._width}, height=${this._height}`;
+    set setHeight(value) {
+        this._height = value;
+    }
+    getInfo() {
+        return super.getInfo() + `Width=${this._width}, Height=${this._height}`;
+    }
+    calculateArea() {
+        return this._width * this._height;
     }
 }
 exports.Rectangle = Rectangle;

@@ -1,3 +1,4 @@
+// Child Class
 import { Shape } from "./Shape";
 
 export class Rectangle extends Shape{
@@ -7,18 +8,6 @@ export class Rectangle extends Shape{
 
     //Accessors
 
-    public set setX(x:number){
-        this._theX = x;
-    }
-    public get getX(): number {
-        return this._theX;
-    }
-    public set setY(y:number){
-        this._theY = y;
-    }
-    public get getY():number {
-        return this._theY;
-    }
     public set setWidth(w:number){
         this._width = w;
     }
